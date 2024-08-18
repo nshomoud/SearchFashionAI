@@ -1,0 +1,63 @@
+Fashion Search AI
+Description
+Fashion Search AI is a Python-based tool designed to help users find and recommend fashion items, specifically kurta sets, based on their descriptions. It uses a combination of natural language processing (NLP) and AI models to search a dataset of fashion items and generate recommendations. The tool also visualizes product images to enhance the user experience.
+
+Table of Contents
+Installation
+Usage
+Dataset
+Features
+Contributing
+License
+Contact
+Installation
+
+Clone the Repository:
+git clone https://github.com/your_username/fashion_search_ai.git
+
+Navigate to the Project Directory:
+cd fashion_search_ai
+
+Install Dependencies:
+Run the following command to install the necessary libraries:
+!pip install openai langchain llama-index pandas scikit-learn matplotlib pillow
+!pip install -U langchain-community
+
+Usage
+To use the Fashion Search AI tool, follow these steps:
+
+Prepare the Dataset:
+Ensure that you have a CSV file named Fashion_Dataset.csv in your Colab environment or working directory. The code preprocesses this file to clean it and handle special characters.
+
+Run the Search and Recommendation Tool:
+Execute the code in a Python environment or a Colab notebook. The tool will:
+
+Load and clean the dataset.
+Allow users to input queries to search for fashion items.
+Display top product recommendations based on cosine similarity of product descriptions.
+Generate AI-powered recommendations using OpenAI's GPT model via LangChain.
+Display images of recommended products.
+Example Query:
+When prompted, you can enter a query like "red cotton dress" to search for relevant products.
+
+Output:
+The tool will output a list of top matching products with descriptions and images, followed by an AI-generated recommendation.
+
+Dataset
+The project uses a Fashion_Dataset.csv file, which contains detailed descriptions of various fashion items, including kurta sets. The dataset includes columns like product names, descriptions, and image URLs.
+
+Preprocessing
+The CSV file is cleaned to handle special characters and ensure the data is in a usable format.
+Missing values in the description column are handled, and invalid image paths are removed.
+Features
+Search Products: Uses TF-IDF and cosine similarity to find the most relevant products based on a user query.
+AI Recommendations: Leverages OpenAI's GPT model through LangChain to generate personalized fashion recommendations.
+Image Display: Fetches and displays product images based on search results.
+Contributing
+Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request. Ensure your changes are well-documented and tested.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contact
+Created by Nojood Alhamoud. For any questions or suggestions, feel free to contact me at nshomoud@hotmail.com
